@@ -1,7 +1,7 @@
 
 FROM robcherry/docker-chromedriver
 USER root  
-RUN echo "deb deb http://mozilla.debian.net/ jessie-backports firefox-release" >> /etc/apt/sources.list
+RUN    echo "deb http://mozilla.debian.net/ jessie-backports firefox-release" >> /etc/apt/sources.list
 RUN    apt-get update  
 RUN    apt-get install -t jessie-backports firefox*
 
