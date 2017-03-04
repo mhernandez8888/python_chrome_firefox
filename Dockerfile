@@ -6,6 +6,6 @@ RUN    apt-get update
 RUN    apt-get -y install -t jessie-backports firefox-esr
 
 #RUN apt-get update
-RUN apt-get -yqq install python2.7.9
-RUN apt-get install -y python-pip python-dev libpq-dev
+#RUN apt-get -yqq install python2.7.9
+RUN apt-get install -y python-pip libpq-dev
 RUN pip install virtualenv
